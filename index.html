@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FundMe App</title>
+  </head>
+  <body>
+    <div class="mx-auto">
+      <header>
+        <div class="flex justify-between text-right my-[1.5rem] px-[1rem]">
+          <p id="user-address"></p>
+          <p id="user-balance"></p>
+          <button
+            class="bg-indigo-500 text-[#fff] w-48 py-[0.5rem] rounded-md mb-[2rem] disabled:opacity-75"
+            id="connect-to-metamask"
+          >
+            Connect to Metamask
+          </button>
+        </div>
+      </header>
+      <main>
+        <div class="container text-center">
+          <h1>Fund Me App</h1>
+          <div>
+            <label for="ether-input-field">Enter Ether</label>
+            <input
+              id="ether-input-field"
+              class="bg-slate-200 ml-[0.5rem] rounded mb-[1rem] py-[0.5rem]"
+              type="text"
+            />
+          </div>
+          <div class="sub-container">
+            <button
+              class="bg-indigo-500 text-[#fff] w-48 py-[0.5rem] rounded-md mb-[2rem]"
+              id="fund-the-contract"
+            >
+              Fund
+            </button>
+          </div>
+          <div class="sub-container">
+            <button
+              class="bg-indigo-500 text-[#fff] w-48 py-[0.5rem] rounded-md mb-[2rem]"
+              id="contract-balance"
+            >
+              Balance
+            </button>
+            <p id="get-total-balance" class="mb-[1.5rem]"></p>
+          </div>
+
+          <div class="sub-container">
+            <button
+              class="bg-indigo-500 text-[#fff] w-48 py-[0.5rem] rounded-md mb-[2rem]"
+              id="withdraw-balance"
+            >
+              Withdraw
+            </button>
+            <p id="get-user-balance"></p>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script async src="https://cdn.tailwindcss.com"></script>
+    <script defer src="src/main.js" type="module"></script>
+  </body>
+</html>
